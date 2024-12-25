@@ -21,23 +21,24 @@
 
         .container {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 250px;
+            padding: 20px;
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         /* Banking Details Styling */
-        .banking-details {
+        .banking-details, .payment-upload {
             flex: 1;
             padding: 20px;
-            border-right: 2px solid #ddd;
+            min-width: 280px;
         }
 
-        .banking-details h2 {
+        .banking-details h2, .payment-upload h2 {
             font-size: 1.8em;
             margin-bottom: 20px;
         }
@@ -48,22 +49,11 @@
         }
 
         /* Payment Upload Section Styling */
-        .payment-upload {
-            flex: 1;
-            padding: 20px;
-        }
-
-        .payment-upload h2 {
-            font-size: 1.8em;
-            margin-bottom: 20px;
-        }
-
         .payment-upload form {
             display: flex;
             flex-direction: column;
         }
 
-      
         .submit-btn {
             background-color: #ff7300;
             color: white;
@@ -74,12 +64,40 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
             box-shadow: 0 4px 15px rgba(255, 115, 0, 0.7);
+            margin-top: 20px;
         }
 
         .submit-btn:hover {
             background-color: #e56600;
             transform: scale(1.1);
+        }
 
+        /* Responsive Design for Mobile Devices */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .banking-details, .payment-upload {
+                padding: 15px;
+                width: 100%;
+                text-align: center;
+            }
+
+            .banking-details h2, .payment-upload h2 {
+                font-size: 1.5em;
+            }
+
+            .banking-details p {
+                font-size: 1.1em;
+            }
+
+            .submit-btn {
+                font-size: 1.1em;
+                padding: 12px 25px;
+                margin-top: 10px;
+            }
         }
     </style>
 </head>
