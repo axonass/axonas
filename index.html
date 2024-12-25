@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Details and Payment Submission</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and container styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 250px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Banking Details Styling */
+        .banking-details {
+            flex: 1;
+            padding: 20px;
+            border-right: 2px solid #ddd;
+        }
+
+        .banking-details h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .banking-details p {
+            margin: 12px 0;
+            font-size: 1.3em;
+        }
+
+        /* Payment Upload Section Styling */
+        .payment-upload {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .payment-upload h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .payment-upload form {
+            display: flex;
+            flex-direction: column;
+        }
+
+      
+        .submit-btn {
+            background-color: #ff7300;
+            color: white;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 115, 0, 0.7);
+        }
+
+        .submit-btn:hover {
+            background-color: #e56600;
+            transform: scale(1.1);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Banking Details Section -->
+        <div class="banking-details">
+            <h2>Banking Details</h2>
+            <p><strong>Bank Name:</strong> AHAVAL BANK</p>
+            <p><strong>Account Number:</strong> 123456789</p>
+            <p><strong>Account Name:</strong> 987654321</p>
+            <p><strong>Branch:</strong> IBAN1234567890</p>
+            <p><strong>SWIFT Code:</strong> SWIFT123456</p>
+        </div>
+
+        <!-- Payment Submission Section -->
+        <div class="payment-upload">
+            <h2>Submit Payment</h2>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCcMMwG_5nBZAyFRvWoS2gosx5hooMk-OitdDr_J680wd8Ig/viewform?usp=header" target="_blank">
+                <button type="submit" class="submit-btn">Submit Payment</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
